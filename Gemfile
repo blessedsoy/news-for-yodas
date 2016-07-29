@@ -39,6 +39,8 @@ group :development, :test do
   gem 'omniauth'
   gem 'omniauth-github'
   gem 'devise-bootstrap-views'
+  gem 'faraday'
+  gem 'dotenv-rails'
 end
 
 group :development do
