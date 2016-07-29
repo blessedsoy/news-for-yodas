@@ -1,0 +1,13 @@
+<div>
+  <% if @error %>
+    <p><%= @error %></p>
+  <% elsif @articles %>
+    <ul>
+    <% @articles.each do |article| %>
+      <li>
+        <%= link_to article["title"], article_path(article) %>
+      </li>
+    <% end %>
+    </ul>
+  <% end %>
+</div>

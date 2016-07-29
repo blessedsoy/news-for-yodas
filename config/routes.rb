@@ -5,7 +5,9 @@ Rails.application.routes.draw do
 
   resources :users, only: [:show]
 
-  get 'articles/search', to: 'articles#search'
+  resources :articles, only: [:show, :index]
+
+  resources :comments
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
