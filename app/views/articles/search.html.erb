@@ -1,0 +1,13 @@
+<div>
+  <% if @error %>
+    <p><%= @error %></p>
+  <% elsif @results %>
+    <ul>
+    <% @results.each do |result| %>
+      <li>
+        <%= result["title"] %>
+      </li>
+    <% end %>
+    </ul>
+  <% end %>
+</div>
