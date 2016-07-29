@@ -41,6 +41,7 @@ group :development, :test do
   gem 'devise-bootstrap-views'
   gem 'faraday'
   gem 'dotenv-rails'
+  gem 'unirest'
 end
 
 group :development do
